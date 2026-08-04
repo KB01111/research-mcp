@@ -1,0 +1,11 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "research",
+  "name_for_human": "Multi-Source Research",
+  "description_for_model": "Search 9 sources, scrape, rerank, and synthesize a cited answer using a free LLM.",
+  "auth": { "type": "none" },
+  "api": { "type": "openai", "url": "https://github.com/KB01111/research-mcp" },
+  "logo_url": "https://raw.githubusercontent.com/KB01111/research-mcp/main/.github/logo.png",
+  "contact_email": "kb01111@users.noreply.github.com",
+  "legal_info_url": "https://github.com/KB01111/research-mcp/blob/main/LICENSE"
+}

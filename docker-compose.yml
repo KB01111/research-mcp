@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  mcp:
+    build: .
+    env_file: .env
+    stdin_open: true
+    tty: true
+    command: ["python", "-m", "mcp_server"]
+    profiles: ["mcp"]
+
+  plugin:
+    build: .
+    env_file: .env
+    ports:
+      - "${PLUGIN_PORT:-8000}:8000"
+    command: ["python", "-m", "openai_plugin.app"]
+    profiles: ["plugin"]
